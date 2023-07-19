@@ -1,11 +1,22 @@
-.body {
+*{
+    box-sizing: border-box;
+    border: 0;
+    padding: 0;
+}
+#header {
     background-color: #EAC926;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
+    padding: 10px;
 
+}
+.main{
+    text-align: center;
+    padding: 10px;
 }
 #barra {
     color: #666;
+    display: none;
 }
 
 #comprar-cuotas {
@@ -14,16 +25,22 @@
 }
 #msj{
     color: #1259c3;
+    display: none;
 }
 .titular {
     color: black;
     font-size: 24px;
 }
 .burger-menu{
-    color: white;
     text-align: center;
+    margin: auto;
+    color: white;
     font-size: 23px;
-    background-color: #1259c3
+    background-color: #1259c3;
+    width: 5vw;
+    height: 5vh;
+    padding: 0px;
+    border: auto
 }
 .precio{
     font-size: 18px;
@@ -41,4 +58,43 @@
     font-size: 2em;
     color: #1259c3;
     line-height: 10px;
+}
+#box-shadow{
+    margin-bottom: 10px;
+}
+#completar{
+    text-align: left;
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+}
+#icono-envio{
+    color: green;
+    margin-left: 0px;
+    text-align: left;
+    width: 5vw;
+    height: 5vh;
+    padding: 5px;
+    border: solid 1px green;
+    border-radius: 50%;
+}
+.imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 361px){
+    #box-shadow{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    #desaparecer{
+        display: none;
+    }
+}
+@media (min-width: 769px){
+    .burger-menu{
+        display: none;
+    }
+    #desaparecer{
+        display: block;
+    }
 }
