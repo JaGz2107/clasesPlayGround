@@ -2,7 +2,6 @@
     box-sizing: border-box;
     border: 0;
     padding: 0;
-    border: solid 1px black;
 }
 #header {
     background-color: #EAC926;
@@ -90,24 +89,17 @@
     border-radius: 50%;
 }
 .imagen{
-    border: solid 5px black;
-    width: 150px;
-    display: block;
+    height: 500px;
+    width: 500px;
     margin: auto;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
 
 }
-@media (min-width: 361px){
+@media (min-width: 361px),(max-width: 768){
     .imagen{
         width: 150px;
-        display: flex;
+        height: 150px;
     }
     #box-shadow{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -115,19 +107,17 @@
     #desaparecer{
         display: none;
     }
-    #icono-envio{
-        color: green;
-        margin-left: 0px;
-        padding: 10px;
-        border: solid 2px green;
-        border-radius: 50%;
-    }
 }
+
 @media (min-width: 769px){
     .burger-menu{
         display: none;
     }
     #desaparecer{
         display: block;
+    }
+    .imagen{
+        height: 500px;
+        width: 500px;
     }
 }
