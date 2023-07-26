@@ -1,123 +1,219 @@
 *{
     box-sizing: border-box;
-    border: 0;
-    padding: 0;
+    border: 0px;
+    padding: 1px;
 }
+/************* HEADER **************/
 #header {
-    background-color: #EAC926;
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    padding: 10px;
-
+        background-color: #EAC926;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        padding: 10px;
+        max-width: 100%;
 }
-.main{
-    text-align: center;
-    padding: 10px;
-}
-#barra {
-    color: #666;
-    display: none;
-}
-
-#comprar-cuotas {
+#comprar-cuotas{
     text-align: center;
     color: #666;
-}
-#msj{
-    color: #1259c3;
-    display: none;
 }
 .titular {
     color: black;
+    text-decoration: none;
     font-size: 24px;
+    padding: 5px;
+}
+.Lista{
+    text-decoration: none;
+    padding: 5px;
+    color: black;
 }
 .burger-menu{
     text-align: center;
     margin: auto;
     color: white;
-    font-size: 23px;
+    font-size: 22px;
     background-color: #1259c3;
     width: 5vw;
     height: 5vh;
     padding: 0px;
-    border: auto
+    border-radius: 20%
 }
-.precio{
-    font-size: 18px;
+.logo{
+    width: 50%;
 }
-.descuento{
-    font-size: 16px;
+.nav_bar{
+    width: 50%;
 }
-.descripcion{
-    font-size: 16px;
+
+
+/************* MAIN ****************/
+.body{
+    background-color: #ebebeb;
 }
-#pie{
+
+.contenedor{
+    display: flex;
+    padding: 10px;
+    background-color: #ebebeb;
+}
+.IMG-DETALLE{
+    width:100%;
+    padding: 10px;
+    background-color: #ebebeb;
+}
+
+
+.cajaIMG{
+    width: 100%;
+    border-bottom: solid 0.5px rgb(100, 100, 100);
+    padding: 10px;
+    background-color: white;
+}
+img{
+    width: 100%;
+}
+
+.detallesProducto{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 1px;
+    background-color: white;
+}
+#precio{
+    width: 30%;
+}
+#descuento{
+    width: 70%;
+    color: green;
+}
+
+#descripcion{
+    margin-left: 5px;
+    width: 100%;
+    
+}
+
+/************ PIE DE PAGINA *****************/
+#Pie-De-Pagina{
     text-align: center;
+    background-color: white;
+    padding: 10px;
 }
-.icono2{
+.Icono-Pie-De-Pagina{
     font-size: 2em;
     color: #1259c3;
     line-height: 10px;
+    padding: 10px;
 }
-#box-shadow{
-    width: 62vw;
-    margin-bottom: 10px;
-}
-#completar{
-    width: calc(50% - 10px);
-    background-color: #ffffff;
-    width: 50vw;
-    margin: auto;
-    text-align: left;
-    border-top: solid 1px #ebebeb;
-    padding: 15px;
-}
-.articulos{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-#icono-envio{
-    color: green;
-    margin-left: 0px;
+#Metodos-Pagos{
     text-align: center;
-    width: 5vw;
-    height: 5vh;
-    padding: 5px;
-    border: solid 2px green;
-    border-radius: 50%;
-}
-.imagen{
-    height: 500px;
-    width: 500px;
     margin: auto;
-    display: flex;
-    justify-content: center;
-
+    padding: 10px;
 }
-@media (min-width: 361px),(max-width: 768){
-    .imagen{
-        width: 150px;
-        height: 150px;
-    }
-    #box-shadow{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-    #desaparecer{
+/*.fa-solid{
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 50px;
+    top: 375px;
+
+}*/
+@media (min-width: 362px){
+    h2{
         display: none;
     }
-}
+    #Desaparecer-Lista{
+        display: none;
+    }
+    .contenedor{
+        flex-direction: column;
+        margin: 5px;
+        
+    }
+    #descripcion{
+        display: none;
+    }
+    .IMG-DETALLE{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    #Contenedor-header{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap ;
+        align-items: center;
+    }
 
-@media (min-width: 769px){
+}
+@media (min-width: 762px){
+    h2{
+        display: block;
+    }
+    #Desaparecer-Lista{
+        display: block;
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .IMG-DETALLE{
+        width: 50%;
+    }
+    .contenedor{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        
+    }
+    #descripcion{
+        display: block;
+    }
     .burger-menu{
         display: none;
     }
-    #desaparecer{
-        display: block;
+    .logo{
+        width: 33%;
     }
-    .imagen{
-        height: 500px;
-        width: 500px;
+    .nav_bar{
+        width: 33%;
     }
+    #comprar-cuotas{
+        width: 33%;
+    }
+    #Contenedor-header{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap ;
+        align-items: center;
+    }
+    .titular{
+        font-size: 15px;
+    }
+    .partir{
+        width: 50%;
+    }
+    li{
+        display: inline-block;
+    }
+    .acomodar-lista{
+        width: 45%;
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+@media(min-width: 1000px){
+    .IMG-DETALLE{
+        width: 25%;
+    }
+   
 }
