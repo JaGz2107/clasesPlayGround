@@ -83,6 +83,7 @@ img{
 }
 #precio{
     width: 30%;
+    position: relative;
 }
 #descuento{
     width: 70%;
@@ -133,9 +134,16 @@ img{
     justify-content: space-around;
 }
 #boton-Enviar{
-    border: solid 1px black;
     width: 40%;
     text-align: center;
+}
+button{
+    width: 100%;
+    border: solid 1px transparent;
+}
+button:hover{
+    background-color: #0022AA;
+    color: white;
 }
 #boton-Borrar{
     border: solid 1px black;
@@ -188,7 +196,7 @@ img{
     margin: auto;
     padding: 10px;
 }
-/*.fa-solid{
+#EnvioGratis{
     color: #39b54a;
     display: block;
     font-size: 16px;
@@ -199,9 +207,9 @@ img{
     background-color: #fff;
     border-radius: 50%;
     position: absolute;
-    right: 50px;
-    top: 375px;
-}*/
+    right: -190px;
+    top: -34px;
+}
 @media (min-width: 362px){
     h2{
         display: none;
@@ -228,6 +236,10 @@ img{
     }
     .contenedor-formulario{
         width: 100%;
+    }
+    #EnvioGratis{
+        position: absolute;
+        right: -240px;
     }
 }
 @media (min-width: 762px){
@@ -289,6 +301,10 @@ img{
     .contenedor-formulario{
         width: 50%;
     }
+    #EnvioGratis{
+        position: absolute;
+        right: -220px;
+    }
 }
 @media(min-width: 1000px){
     .IMG-DETALLE{
@@ -296,5 +312,30 @@ img{
     }
     .contenedor-formulario{
         width: 27%;
+    }
+    #EnvioGratis{
+        position: absolute;
+        right: -190px;
+    }
+    .lista-Pie{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .contenedor-Pie-De-Pagina{
+        width: 33%;
+    }
+    #Copyright{
+        width: 100%;
+        display: block;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .Icono-Pie-De-Pagina{
+        transition: color 1s;
+    }
+    .Icono-Pie-De-Pagina:hover{
+        color: green;
     }
 }

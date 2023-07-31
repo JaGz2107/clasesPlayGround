@@ -15,3 +15,9 @@ app.get('/registrar', (req, res) =>{
 app.get('/ingresa', (req, res) =>{
     res.sendfile(path.resolve(__dirname, "./views/ingresa.html"))
 })
+app.post('/register', (req, res) => 
+    res.redirect('/')
+);
+app.post('/ingresa', (req, res) => 
+    res.redirect('/')
+);
